@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D751EF788A90006EBCD /* AppDelegate.swift */; };
-		CC126D781EF788A90006EBCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D771EF788A90006EBCD /* ViewController.swift */; };
-		CC126D7B1EF788A90006EBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC126D791EF788A90006EBCD /* Main.storyboard */; };
 		CC126D7E1EF788A90006EBCD /* KNCinema.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC126D7C1EF788A90006EBCD /* KNCinema.xcdatamodeld */; };
 		CC126D801EF788A90006EBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC126D7F1EF788A90006EBCD /* Assets.xcassets */; };
 		CC126D831EF788A90006EBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC126D811EF788A90006EBCD /* LaunchScreen.storyboard */; };
+		CC126D8F1EF7AE2E0006EBCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D8D1EF7AE2E0006EBCD /* LoginViewController.swift */; };
+		CC126D901EF7AE2E0006EBCD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC126D8E1EF7AE2E0006EBCD /* LoginViewController.xib */; };
+		CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D961EF7B60B0006EBCD /* ExtensionUIViewController.swift */; };
+		CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D981EF7B8D10006EBCD /* BaseViewController.swift */; };
+		CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D9A1EF7B90A0006EBCD /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC126D721EF788A90006EBCD /* KNCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC126D751EF788A90006EBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC126D771EF788A90006EBCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC126D7A1EF788A90006EBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC126D7D1EF788A90006EBCD /* KNCinema.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KNCinema.xcdatamodel; sourceTree = "<group>"; };
 		CC126D7F1EF788A90006EBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC126D821EF788A90006EBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC126D841EF788A90006EBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC126D8D1EF7AE2E0006EBCD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC126D8E1EF7AE2E0006EBCD /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CC126D961EF7B60B0006EBCD /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		CC126D981EF7B8D10006EBCD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC126D9A1EF7B90A0006EBCD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,82 @@
 		CC126D741EF788A90006EBCD /* KNCinema */ = {
 			isa = PBXGroup;
 			children = (
+				CC126D951EF7B5E30006EBCD /* Extension */,
+				CC126D921EF7AF5D0006EBCD /* DataManager */,
+				CC126D911EF7AF4B0006EBCD /* Model */,
+				CC126D8B1EF7AD750006EBCD /* View */,
+				CC126D8A1EF7AD6D0006EBCD /* ViewController */,
 				CC126D751EF788A90006EBCD /* AppDelegate.swift */,
-				CC126D771EF788A90006EBCD /* ViewController.swift */,
-				CC126D791EF788A90006EBCD /* Main.storyboard */,
 				CC126D7F1EF788A90006EBCD /* Assets.xcassets */,
 				CC126D811EF788A90006EBCD /* LaunchScreen.storyboard */,
 				CC126D841EF788A90006EBCD /* Info.plist */,
 				CC126D7C1EF788A90006EBCD /* KNCinema.xcdatamodeld */,
 			);
 			path = KNCinema;
+			sourceTree = "<group>";
+		};
+		CC126D8A1EF7AD6D0006EBCD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D931EF7B3080006EBCD /* BaseViewController */,
+				CC126D8C1EF7ADB90006EBCD /* LoginViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CC126D8B1EF7AD750006EBCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D941EF7B3150006EBCD /* BaseView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC126D8C1EF7ADB90006EBCD /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D8D1EF7AE2E0006EBCD /* LoginViewController.swift */,
+				CC126D8E1EF7AE2E0006EBCD /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		CC126D911EF7AF4B0006EBCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC126D921EF7AF5D0006EBCD /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		CC126D931EF7B3080006EBCD /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D981EF7B8D10006EBCD /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CC126D941EF7B3150006EBCD /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D9A1EF7B90A0006EBCD /* BaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		CC126D951EF7B5E30006EBCD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D961EF7B60B0006EBCD /* ExtensionUIViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +202,7 @@
 			files = (
 				CC126D831EF788A90006EBCD /* LaunchScreen.storyboard in Resources */,
 				CC126D801EF788A90006EBCD /* Assets.xcassets in Resources */,
-				CC126D7B1EF788A90006EBCD /* Main.storyboard in Resources */,
+				CC126D901EF7AE2E0006EBCD /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC126D781EF788A90006EBCD /* ViewController.swift in Sources */,
+				CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */,
+				CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */,
+				CC126D8F1EF7AE2E0006EBCD /* LoginViewController.swift in Sources */,
+				CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */,
 				CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */,
 				CC126D7E1EF788A90006EBCD /* KNCinema.xcdatamodeld in Sources */,
 			);
@@ -149,14 +225,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC126D791EF788A90006EBCD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC126D7A1EF788A90006EBCD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC126D811EF788A90006EBCD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
