@@ -13,11 +13,5 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-        if isIpad(){
-            return .landscape
-        }
-        return .portrait
-    }
+
 }

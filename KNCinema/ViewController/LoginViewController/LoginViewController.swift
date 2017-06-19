@@ -20,11 +20,11 @@ class LoginViewController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-//        if isIpad(){
-//            return .landscape
-//        }
-//        return .portrait
-//    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        if isIpad(){
+            return .landscape
+        }
+        return .portrait
+    }
 
 }
