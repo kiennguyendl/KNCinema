@@ -16,6 +16,8 @@
 		CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D961EF7B60B0006EBCD /* ExtensionUIViewController.swift */; };
 		CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D981EF7B8D10006EBCD /* BaseViewController.swift */; };
 		CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D9A1EF7B90A0006EBCD /* BaseView.swift */; };
+		CC126D9F1EF7D7910006EBCD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D9D1EF7D7910006EBCD /* HomeViewController.swift */; };
+		CC126DA01EF7D7910006EBCD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC126D9E1EF7D7910006EBCD /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CC126D961EF7B60B0006EBCD /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
 		CC126D981EF7B8D10006EBCD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CC126D9A1EF7B90A0006EBCD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CC126D9D1EF7D7910006EBCD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CC126D9E1EF7D7910006EBCD /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		CC126D8A1EF7AD6D0006EBCD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CC126D9C1EF7D7810006EBCD /* HomeViewController */,
 				CC126D931EF7B3080006EBCD /* BaseViewController */,
 				CC126D8C1EF7ADB90006EBCD /* LoginViewController */,
 			);
@@ -138,6 +143,15 @@
 				CC126D961EF7B60B0006EBCD /* ExtensionUIViewController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CC126D9C1EF7D7810006EBCD /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC126D9D1EF7D7910006EBCD /* HomeViewController.swift */,
+				CC126D9E1EF7D7910006EBCD /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +217,7 @@
 				CC126D831EF788A90006EBCD /* LaunchScreen.storyboard in Resources */,
 				CC126D801EF788A90006EBCD /* Assets.xcassets in Resources */,
 				CC126D901EF7AE2E0006EBCD /* LoginViewController.xib in Resources */,
+				CC126DA01EF7D7910006EBCD /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +233,7 @@
 				CC126D8F1EF7AE2E0006EBCD /* LoginViewController.swift in Sources */,
 				CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */,
 				CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */,
+				CC126D9F1EF7D7910006EBCD /* HomeViewController.swift in Sources */,
 				CC126D7E1EF788A90006EBCD /* KNCinema.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
