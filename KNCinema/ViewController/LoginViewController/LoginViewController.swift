@@ -10,6 +10,10 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet weak var txtUserName: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var btnSignIn: UIButton!
+    @IBOutlet weak var btnSignInWithFacebook: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +31,9 @@ class LoginViewController: BaseViewController {
         return .portrait
     }
 
+    @IBAction func signInBtn(_ sender: Any) {
+    }
+    
+    @IBAction func signInWithFBBtn(_ sender: Any) {
+    }
 }
