@@ -18,6 +18,12 @@
 		CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D9A1EF7B90A0006EBCD /* BaseView.swift */; };
 		CC126D9F1EF7D7910006EBCD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D9D1EF7D7910006EBCD /* HomeViewController.swift */; };
 		CC126DA01EF7D7910006EBCD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC126D9E1EF7D7910006EBCD /* HomeViewController.xib */; };
+		CC44DDCA1EF901D7002775D8 /* HeaderHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDC91EF901D7002775D8 /* HeaderHomeView.xib */; };
+		CC44DDCC1EF901FD002775D8 /* HeaderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44DDCB1EF901FD002775D8 /* HeaderHomeView.swift */; };
+		CC44DDCF1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44DDCD1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift */; };
+		CC44DDD01EF90565002775D8 /* HeaderHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */; };
+		CC44DDD31EF90700002775D8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */; };
+		CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		CC126D9A1EF7B90A0006EBCD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		CC126D9D1EF7D7910006EBCD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC126D9E1EF7D7910006EBCD /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CC44DDC91EF901D7002775D8 /* HeaderHomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderHomeView.xib; sourceTree = "<group>"; };
+		CC44DDCB1EF901FD002775D8 /* HeaderHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderHomeView.swift; sourceTree = "<group>"; };
+		CC44DDCD1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,7 @@
 		CC126D8B1EF7AD750006EBCD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC44DDC81EF901B6002775D8 /* HomeView */,
 				CC126D941EF7B3150006EBCD /* BaseView */,
 			);
 			path = View;
@@ -152,6 +165,19 @@
 				CC126D9E1EF7D7910006EBCD /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		CC44DDC81EF901B6002775D8 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				CC44DDCB1EF901FD002775D8 /* HeaderHomeView.swift */,
+				CC44DDC91EF901D7002775D8 /* HeaderHomeView.xib */,
+				CC44DDCD1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift */,
+				CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */,
+				CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */,
+				CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC44DDD01EF90565002775D8 /* HeaderHomeCollectionViewCell.xib in Resources */,
+				CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */,
 				CC126D831EF788A90006EBCD /* LaunchScreen.storyboard in Resources */,
+				CC44DDCA1EF901D7002775D8 /* HeaderHomeView.xib in Resources */,
 				CC126D801EF788A90006EBCD /* Assets.xcassets in Resources */,
 				CC126D901EF7AE2E0006EBCD /* LoginViewController.xib in Resources */,
 				CC126DA01EF7D7910006EBCD /* HomeViewController.xib in Resources */,
@@ -231,7 +260,10 @@
 				CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */,
 				CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */,
 				CC126D8F1EF7AE2E0006EBCD /* LoginViewController.swift in Sources */,
+				CC44DDCF1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift in Sources */,
 				CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */,
+				CC44DDCC1EF901FD002775D8 /* HeaderHomeView.swift in Sources */,
+				CC44DDD31EF90700002775D8 /* HomeTableViewCell.swift in Sources */,
 				CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */,
 				CC126D9F1EF7D7910006EBCD /* HomeViewController.swift in Sources */,
 				CC126D7E1EF788A90006EBCD /* KNCinema.xcdatamodeld in Sources */,
@@ -394,6 +426,7 @@
 				CC126D891EF788A90006EBCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

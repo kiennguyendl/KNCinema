@@ -9,7 +9,7 @@
 import UIKit
 
 class BaseView: UIView {
-    var contentView: UIView?
+    var contentView:UIView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,7 +21,7 @@ class BaseView: UIView {
     }
     
     func loadViewFromXIB() {
-        let bundle = Bundle( for: type(of: self))
+        let bundle = Bundle(for:type(of: self))
         let view = bundle.loadNibNamed(NSStringFromClass(type(of: self)).components(separatedBy: ".").last!, owner: self, options: nil)?.first as? UIView
         guard let contentView = view else { return }
         contentView.frame = self.bounds
