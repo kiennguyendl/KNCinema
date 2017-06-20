@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4B7C2DD1FA24B66ED2B27630DE481BC1'
+               BlueprintIdentifier = 'EF44983111A24D81BC1520D4D2344F6B'
                BlueprintName = 'Pods-KNCinema'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-KNCinema.framework'>
