@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +84,9 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="400" id="Jbh-8I-JPV"/>
                     </constraints>
-                    <state key="normal" title="Sign In"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="Jbh-8I-JPV"/>
@@ -126,7 +128,9 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="400" id="R8X-Ao-Ysl"/>
                     </constraints>
-                    <state key="normal" title="Sign In With Facebook"/>
+                    <state key="normal" title="Sign In With Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="R8X-Ao-Ysl"/>
@@ -141,6 +145,29 @@
                         <action selector="signInWithFBBtn:" destination="-1" eventType="touchUpInside" id="3gP-Ws-ypz"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE7-yw-McF">
+                    <rect key="frame" x="186" y="691" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Md-4y-avQ">
+                    <rect key="frame" x="150" y="700.33333333333348" width="143" height="15.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.97647058819999999" green="0.43529411759999997" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-TF-YYk">
+                    <rect key="frame" x="298" y="693" width="100" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="a2S-SU-i1Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" red="0.97647058819999999" green="0.43529411759999997" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -154,17 +181,22 @@
                 <constraint firstItem="RFv-y9-VHx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C5B-aA-Qdy"/>
                 <constraint firstItem="hqg-Dm-AAZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EKb-Vt-4QG"/>
                 <constraint firstItem="hdQ-7D-SVa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2:3" id="GxN-1p-3HY"/>
+                <constraint firstItem="7uF-TF-YYk" firstAttribute="leading" secondItem="9Md-4y-avQ" secondAttribute="trailing" constant="5" id="Krc-PB-RyF"/>
                 <constraint firstItem="xWE-cq-11O" firstAttribute="top" secondItem="hdQ-7D-SVa" secondAttribute="bottom" constant="30" id="NIg-Tl-zJO"/>
                 <constraint firstItem="5bK-C4-Tbe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NiG-NH-nG5"/>
                 <constraint firstItem="nQk-Oi-F23" firstAttribute="top" secondItem="hqg-Dm-AAZ" secondAttribute="bottom" constant="20" id="RyK-no-pig"/>
+                <constraint firstAttribute="trailing" secondItem="7uF-TF-YYk" secondAttribute="trailing" constant="16" id="TCg-Qi-LM5"/>
                 <constraint firstItem="xWE-cq-11O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VL5-Fo-OuT"/>
                 <constraint firstItem="RFv-y9-VHx" firstAttribute="top" secondItem="nQk-Oi-F23" secondAttribute="bottom" constant="10" id="Vv6-kd-wZQ"/>
                 <constraint firstItem="5bK-C4-Tbe" firstAttribute="top" secondItem="RFv-y9-VHx" secondAttribute="bottom" constant="10" id="c83-lA-UGP"/>
+                <constraint firstItem="9Md-4y-avQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="150" id="fp6-Qk-HgT"/>
                 <constraint firstItem="hdQ-7D-SVa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="iUQ-Lt-Ru5"/>
                 <constraint firstItem="hdQ-7D-SVa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kca-Z1-BBq"/>
                 <constraint firstAttribute="trailing" secondItem="5bK-C4-Tbe" secondAttribute="trailing" constant="16" id="kxS-fI-qyv"/>
                 <constraint firstItem="nQk-Oi-F23" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mKT-WB-IIW"/>
+                <constraint firstAttribute="bottom" secondItem="7uF-TF-YYk" secondAttribute="bottom" constant="15" id="mrY-Lg-cHg"/>
                 <constraint firstAttribute="trailing" secondItem="hqg-Dm-AAZ" secondAttribute="trailing" constant="16" id="pQw-Uw-KAq"/>
+                <constraint firstAttribute="bottom" secondItem="9Md-4y-avQ" secondAttribute="bottom" constant="20" id="rxf-x3-1l2"/>
                 <constraint firstItem="RFv-y9-VHx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vX2-wk-drS"/>
                 <constraint firstItem="hdQ-7D-SVa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zAg-6D-c0C"/>
                 <constraint firstItem="nQk-Oi-F23" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="zg5-Nh-A6n"/>
@@ -175,9 +207,6 @@
                     <exclude reference="GxN-1p-3HY"/>
                     <exclude reference="kca-Z1-BBq"/>
                     <exclude reference="zAg-6D-c0C"/>
-                    <exclude reference="0Dh-Kf-Ndu"/>
-                    <exclude reference="NiG-NH-nG5"/>
-                    <exclude reference="kxS-fI-qyv"/>
                     <exclude reference="5BP-up-hlE"/>
                     <exclude reference="BfU-Pe-Ix9"/>
                     <exclude reference="VL5-Fo-OuT"/>
@@ -187,6 +216,9 @@
                     <exclude reference="7mW-FI-aB5"/>
                     <exclude reference="mKT-WB-IIW"/>
                     <exclude reference="zg5-Nh-A6n"/>
+                    <exclude reference="0Dh-Kf-Ndu"/>
+                    <exclude reference="NiG-NH-nG5"/>
+                    <exclude reference="kxS-fI-qyv"/>
                     <exclude reference="C5B-aA-Qdy"/>
                     <exclude reference="vX2-wk-drS"/>
                 </mask>
@@ -195,14 +227,14 @@
                 <mask key="constraints">
                     <include reference="6NL-wY-86E"/>
                     <include reference="zAg-6D-c0C"/>
-                    <include reference="0Dh-Kf-Ndu"/>
-                    <include reference="kxS-fI-qyv"/>
                     <include reference="5BP-up-hlE"/>
                     <include reference="BfU-Pe-Ix9"/>
                     <include reference="AIj-YN-Hi2"/>
                     <include reference="pQw-Uw-KAq"/>
                     <include reference="7mW-FI-aB5"/>
                     <include reference="zg5-Nh-A6n"/>
+                    <include reference="0Dh-Kf-Ndu"/>
+                    <include reference="kxS-fI-qyv"/>
                     <include reference="vX2-wk-drS"/>
                 </mask>
             </variation>
@@ -210,14 +242,14 @@
                 <mask key="constraints">
                     <include reference="GxN-1p-3HY"/>
                     <include reference="kca-Z1-BBq"/>
-                    <include reference="NiG-NH-nG5"/>
                     <include reference="VL5-Fo-OuT"/>
                     <include reference="EKb-Vt-4QG"/>
                     <include reference="mKT-WB-IIW"/>
+                    <include reference="NiG-NH-nG5"/>
                     <include reference="C5B-aA-Qdy"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="24.5" y="52.5"/>
+            <point key="canvasLocation" x="24" y="52"/>
         </view>
     </objects>
     <resources>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21E29A801EFAD1C20053E688 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E29A7E1EFAD1C20053E688 /* RegisterViewController.swift */; };
+		21E29A811EFAD1C20053E688 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E29A7F1EFAD1C20053E688 /* RegisterViewController.xib */; };
 		21F8F1161EF9847A00199A6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21F8F1151EF9847A00199A6A /* GoogleService-Info.plist */; };
 		6FC5FA627230274B7A30D6CC /* Pods_KNCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A39ADD8D4ADEEC294C15B8D /* Pods_KNCinema.framework */; };
 		CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D751EF788A90006EBCD /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21E29A7E1EFAD1C20053E688 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		21E29A7F1EFAD1C20053E688 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		21F8F1151EF9847A00199A6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5DCF8B89C6A01CCF00F9C228 /* Pods-KNCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNCinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNCinema/Pods-KNCinema.debug.xcconfig"; sourceTree = "<group>"; };
 		7A39ADD8D4ADEEC294C15B8D /* Pods_KNCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21E29A7D1EFAD15A0053E688 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21E29A7E1EFAD1C20053E688 /* RegisterViewController.swift */,
+				21E29A7F1EFAD1C20053E688 /* RegisterViewController.xib */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
 		69E84CCF8BCF7BD68CD6BF28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		CC126D8A1EF7AD6D0006EBCD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				21E29A7D1EFAD15A0053E688 /* RegisterViewController */,
 				CC126D9C1EF7D7810006EBCD /* HomeViewController */,
 				CC126D931EF7B3080006EBCD /* BaseViewController */,
 				CC126D8C1EF7ADB90006EBCD /* LoginViewController */,
@@ -275,6 +289,7 @@
 				CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */,
 				CC126D831EF788A90006EBCD /* LaunchScreen.storyboard in Resources */,
 				CC44DDCA1EF901D7002775D8 /* HeaderHomeView.xib in Resources */,
+				21E29A811EFAD1C20053E688 /* RegisterViewController.xib in Resources */,
 				CC126D801EF788A90006EBCD /* Assets.xcassets in Resources */,
 				CC126D901EF7AE2E0006EBCD /* LoginViewController.xib in Resources */,
 				CC126DA01EF7D7910006EBCD /* HomeViewController.xib in Resources */,
@@ -337,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */,
+				21E29A801EFAD1C20053E688 /* RegisterViewController.swift in Sources */,
 				CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */,
 				CC126D8F1EF7AE2E0006EBCD /* LoginViewController.swift in Sources */,
 				CC44DDCF1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift in Sources */,
