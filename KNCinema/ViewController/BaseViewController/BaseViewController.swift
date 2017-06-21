@@ -7,11 +7,24 @@
 //
 
 import UIKit
+import Firebase
+import SystemConfiguration
+import FirebaseDatabase
 
 class BaseViewController: UIViewController {
+    //let fireBaseRef:
+    let fireBaseRef = FIRDatabase.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    func startLoading() {
+        
+    }
+    
+    func stopLoading() {
+        
+    }
 }
