@@ -31,6 +31,7 @@
 		CC44DDD31EF90700002775D8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */; };
 		CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */; };
 		CCB5D4AB1EFB770800951469 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5D4AA1EFB770800951469 /* User.swift */; };
+		CCB5D4AF1EFBB48800951469 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5D4AE1EFBB48800951469 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		CCB5D4AA1EFB770800951469 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CCB5D4AE1EFBB48800951469 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		CC126D921EF7AF5D0006EBCD /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				CCB5D4AE1EFBB48800951469 /* DataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				CCB5D4AB1EFB770800951469 /* User.swift in Sources */,
 				CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */,
 				21E29A801EFAD1C20053E688 /* RegisterViewController.swift in Sources */,
+				CCB5D4AF1EFBB48800951469 /* DataManager.swift in Sources */,
 				CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */,
 				21E29A851EFAD8D20053E688 /* DetailViewController.swift in Sources */,
 				CC126D8F1EF7AE2E0006EBCD /* LoginViewController.swift in Sources */,
