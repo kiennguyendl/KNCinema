@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SystemConfiguration
 import FirebaseDatabase
+import MBProgressHUD
 
 class BaseViewController: UIViewController {
     //let fireBaseRef:
@@ -21,10 +22,11 @@ class BaseViewController: UIViewController {
     }
 
     func startLoading() {
-        
+        MBProgressHUD.hide(for: self.view, animated: false)
+        MBProgressHUD.showAdded(to: self.view, animated: true)
     }
     
     func stopLoading() {
-        
+        MBProgressHUD.hide(for: self.view, animated: true)
     }
 }

@@ -30,6 +30,7 @@
 		CC44DDD01EF90565002775D8 /* HeaderHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */; };
 		CC44DDD31EF90700002775D8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */; };
 		CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */; };
+		CCB5D4AB1EFB770800951469 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5D4AA1EFB770800951469 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		CCB5D4AA1EFB770800951469 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		CC126D911EF7AF4B0006EBCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCB5D4AA1EFB770800951469 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,7 +344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		63F5B668EFE901E90F145AC2 /* [CP] Copy Pods Resources */ = {
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB5D4AB1EFB770800951469 /* User.swift in Sources */,
 				CC126D991EF7B8D10006EBCD /* BaseViewController.swift in Sources */,
 				21E29A801EFAD1C20053E688 /* RegisterViewController.swift in Sources */,
 				CC126D971EF7B60B0006EBCD /* ExtensionUIViewController.swift in Sources */,
