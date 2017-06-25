@@ -18,4 +18,15 @@ extension UIViewController{
         return false
         
     }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertView(title: title, message: message, delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
+    
+    // Show error info form Firebase
+    func showErrorFirebase(title: String,error: NSError) {
+        self.showAlert(title: title, message: error.localizedDescription)
+        self.view.isUserInteractionEnabled = true
+    }
 }

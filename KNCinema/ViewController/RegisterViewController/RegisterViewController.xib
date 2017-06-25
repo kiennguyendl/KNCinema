@@ -73,16 +73,31 @@
                         <action selector="registerBtn:" destination="-1" eventType="touchUpInside" id="PaZ-fP-jhe"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yt-Va-H8h">
+                    <rect key="frame" x="257.5" y="476" width="60" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.43529411759999997" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="JN2-ab-PkR"/>
+                    </constraints>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Cancel:" destination="-1" eventType="touchUpInside" id="lo2-vJ-aWF"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="lcf-7u-Q5H" secondAttribute="trailing" constant="16" id="4uT-Pm-uLu"/>
+                <constraint firstItem="6Yt-Va-H8h" firstAttribute="top" secondItem="lcf-7u-Q5H" secondAttribute="bottom" constant="10" id="Blq-2U-2kV"/>
                 <constraint firstItem="Y2K-Xo-2JF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DGG-KS-1kh"/>
                 <constraint firstItem="rrG-dT-HHX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="GDd-Pr-tyD"/>
                 <constraint firstItem="lcf-7u-Q5H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ITm-c4-EZQ"/>
                 <constraint firstAttribute="trailing" secondItem="rrG-dT-HHX" secondAttribute="trailing" id="Kq6-pC-ffD"/>
                 <constraint firstItem="rrG-dT-HHX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pcq-AH-evq"/>
                 <constraint firstItem="Y2K-Xo-2JF" firstAttribute="top" secondItem="lcf-7u-Q5H" secondAttribute="bottom" constant="10" id="eka-1g-kiN"/>
+                <constraint firstItem="6Yt-Va-H8h" firstAttribute="leading" secondItem="Y2K-Xo-2JF" secondAttribute="trailing" constant="20" id="g7l-9N-Rjj"/>
                 <constraint firstItem="lcf-7u-Q5H" firstAttribute="top" secondItem="rrG-dT-HHX" secondAttribute="bottom" constant="30" id="pAK-pc-w52"/>
             </constraints>
         </view>

@@ -32,8 +32,15 @@ class LoginViewController: BaseViewController {
     }
 
     @IBAction func signInBtn(_ sender: Any) {
+        
     }
     
     @IBAction func signInWithFBBtn(_ sender: Any) {
     }
+    
+    @IBAction func registerBtn(_ sender: Any) {
+        let vc = RegisterViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }

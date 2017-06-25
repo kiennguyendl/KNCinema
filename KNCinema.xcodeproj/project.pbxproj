@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2154BB551F00302800FBBBD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2154BB541F00302800FBBBD6 /* GoogleService-Info.plist */; };
 		21E29A801EFAD1C20053E688 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E29A7E1EFAD1C20053E688 /* RegisterViewController.swift */; };
 		21E29A811EFAD1C20053E688 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E29A7F1EFAD1C20053E688 /* RegisterViewController.xib */; };
 		21E29A851EFAD8D20053E688 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E29A831EFAD8D20053E688 /* DetailViewController.swift */; };
 		21E29A861EFAD8D20053E688 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E29A841EFAD8D20053E688 /* DetailViewController.xib */; };
-		21F8F1161EF9847A00199A6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21F8F1151EF9847A00199A6A /* GoogleService-Info.plist */; };
 		6FC5FA627230274B7A30D6CC /* Pods_KNCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A39ADD8D4ADEEC294C15B8D /* Pods_KNCinema.framework */; };
 		CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC126D751EF788A90006EBCD /* AppDelegate.swift */; };
 		CC126D7E1EF788A90006EBCD /* KNCinema.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC126D7C1EF788A90006EBCD /* KNCinema.xcdatamodeld */; };
@@ -35,11 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2154BB541F00302800FBBBD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21E29A7E1EFAD1C20053E688 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		21E29A7F1EFAD1C20053E688 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		21E29A831EFAD8D20053E688 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		21E29A841EFAD8D20053E688 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		21F8F1151EF9847A00199A6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5DCF8B89C6A01CCF00F9C228 /* Pods-KNCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNCinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNCinema/Pods-KNCinema.debug.xcconfig"; sourceTree = "<group>"; };
 		7A39ADD8D4ADEEC294C15B8D /* Pods_KNCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F399220EF2ABF8C9F211D5 /* Pods-KNCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNCinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNCinema/Pods-KNCinema.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				CC126D811EF788A90006EBCD /* LaunchScreen.storyboard */,
 				CC126D841EF788A90006EBCD /* Info.plist */,
 				CC126D7C1EF788A90006EBCD /* KNCinema.xcdatamodeld */,
-				21F8F1151EF9847A00199A6A /* GoogleService-Info.plist */,
+				2154BB541F00302800FBBBD6 /* GoogleService-Info.plist */,
 			);
 			path = KNCinema;
 			sourceTree = "<group>";
@@ -305,13 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC44DDD01EF90565002775D8 /* HeaderHomeCollectionViewCell.xib in Resources */,
-				21F8F1161EF9847A00199A6A /* GoogleService-Info.plist in Resources */,
 				CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */,
 				CC126D831EF788A90006EBCD /* LaunchScreen.storyboard in Resources */,
 				CC44DDCA1EF901D7002775D8 /* HeaderHomeView.xib in Resources */,
 				21E29A811EFAD1C20053E688 /* RegisterViewController.xib in Resources */,
 				CC126D801EF788A90006EBCD /* Assets.xcassets in Resources */,
 				21E29A861EFAD8D20053E688 /* DetailViewController.xib in Resources */,
+				2154BB551F00302800FBBBD6 /* GoogleService-Info.plist in Resources */,
 				CC126D901EF7AE2E0006EBCD /* LoginViewController.xib in Resources */,
 				CC126DA01EF7D7910006EBCD /* HomeViewController.xib in Resources */,
 			);
@@ -347,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		63F5B668EFE901E90F145AC2 /* [CP] Copy Pods Resources */ = {

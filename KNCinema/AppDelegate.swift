@@ -27,7 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setUpRootView() {
         window = UIWindow(frame: UIScreen.main.bounds)
         let rootView = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        window?.rootViewController = rootView
+        let navigation = UINavigationController(rootViewController: rootView)
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
     
