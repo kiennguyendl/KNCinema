@@ -15,8 +15,10 @@ import MBProgressHUD
 class BaseViewController: UIViewController {
     //let fireBaseRef:
     let fireBaseRef = FIRDatabase.database().reference()
+    
     var keyboardHidden = true
     var hideKeyboardTap:UITapGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createNotificationCenter()
