@@ -45,7 +45,7 @@ class RegisterViewController: BaseViewController {
                             self.addUserToFireBase(user: user, updateUser: updateUser, name: username, email: email, imgUrlStr: photoURL.absoluteString )
                             self.handleLogout()
                             self.stopLoading()
-                            let alertController = UIAlertController(title: "Thông báo", message: "Bạn đăng ký tài khoản thành công. Vui lòng xác thực và đăng nhập.", preferredStyle:UIAlertControllerStyle.alert)
+                            let alertController = UIAlertController(title: "Register", message: "Success. Please exit and login.", preferredStyle:UIAlertControllerStyle.alert)
                             alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self](UIAlertAction) in
                                 self?.dismiss(animated: true, completion: nil)
                             }))
