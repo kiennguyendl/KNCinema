@@ -11,17 +11,17 @@ import Firebase
 import FirebaseAuth
 
 class LoginViewController: BaseViewController {
-
+    
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignIn: UIButton!
     @IBOutlet weak var btnSignInWithFacebook: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -32,7 +32,7 @@ class LoginViewController: BaseViewController {
         }
         return .portrait
     }
-
+    
     @IBAction func signInBtn(_ sender: Any) {
         if isConnectedToNetwork(){
             startLoading()
@@ -45,13 +45,11 @@ class LoginViewController: BaseViewController {
                     if let error = error{
                         self.stopLoading()
                         self.showErrorFirebase(title: "Error Server", error: error as NSError)
-                    }
-                    
-                    
-                    if let _ = user{
-                        self.txtUserName.text = ""
-                        self.txtPassword.text = ""
-                        NotificationCenter.default.addObserver(self, selector: #selector(self.pushHome), name: NSNotification.Name(rawValue: "SuccessLoading"), object: nil)
+                    }else{
+                        if let _ = user{
+                            //NotificationCenter.default.addObserver(self, selector: #selector(self.pushHome), name: NSNotification.Name(rawValue: "SuccessLoading"), object: nil)
+                            self.pushHome()
+                        }
                     }
                 })
             }else{
@@ -73,7 +71,9 @@ class LoginViewController: BaseViewController {
     }
     
     
-    @objc private func pushHome(){
+    func pushHome(){
+        self.txtUserName.text = ""
+        self.txtPassword.text = ""
         let vc = HomeViewController()
         navigationController?.pushViewController(vc, animated: true)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "SuccessLoading"), object: nil)
