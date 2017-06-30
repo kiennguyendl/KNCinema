@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: BaseViewController {
 
@@ -18,8 +19,25 @@ class HomeViewController: BaseViewController {
         listMovieTableView.dataSource = self
         listMovieTableView.register(UINib.init(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
         // Do any additional setup after loading the view.
+        loadData()
     }
 
+    func loadData() {
+        let ref = self.fireBaseRef.child("Movies").observeSingleEvent(of: .value, with: {(snapshot: FIRDataSnapshot) in
+            if let listTypeMovies: [FIRDataSnapshot] = snapshot.children.allObjects as! [FIRDataSnapshot]{
+                print(listTypeMovies)
+                
+                for index in listTypeMovies{
+                    let refMovie = self.fireBaseRef.child("Movies").child(index.key).observeSingleEvent(of: .value, with: {(snap: FIRDataSnapshot) in
+                        if let listMovie: [FIRDataSnapshot] = snap.children.allObjects as? [FIRDataSnapshot]{
+                            print(listMovie)
+                        }
+                    })
+                }
+            }
+        })
+        print(ref)
+    }
 
 }
 

@@ -30,6 +30,8 @@
 		CC44DDD01EF90565002775D8 /* HeaderHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */; };
 		CC44DDD31EF90700002775D8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */; };
 		CC44DDD41EF90700002775D8 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */; };
+		CC8E728A1F063116009B7502 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E72891F063116009B7502 /* Movie.swift */; };
+		CC8E728E1F064A69009B7502 /* ListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E728D1F064A69009B7502 /* ListMovies.swift */; };
 		CCB5D4AB1EFB770800951469 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5D4AA1EFB770800951469 /* User.swift */; };
 		CCB5D4AF1EFBB48800951469 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5D4AE1EFBB48800951469 /* DataManager.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		CC44DDCE1EF90565002775D8 /* HeaderHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		CC44DDD11EF90700002775D8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CC44DDD21EF90700002775D8 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		CC8E72891F063116009B7502 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CC8E728D1F064A69009B7502 /* ListMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovies.swift; sourceTree = "<group>"; };
 		CCB5D4AA1EFB770800951469 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CCB5D4AE1EFBB48800951469 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				CCB5D4AA1EFB770800951469 /* User.swift */,
+				CC8E72891F063116009B7502 /* Movie.swift */,
+				CC8E728D1F064A69009B7502 /* ListMovies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,10 +388,12 @@
 				CC44DDCF1EF90565002775D8 /* HeaderHomeCollectionViewCell.swift in Sources */,
 				CC126D9B1EF7B90A0006EBCD /* BaseView.swift in Sources */,
 				CC44DDCC1EF901FD002775D8 /* HeaderHomeView.swift in Sources */,
+				CC8E728E1F064A69009B7502 /* ListMovies.swift in Sources */,
 				CC44DDD31EF90700002775D8 /* HomeTableViewCell.swift in Sources */,
 				CC126D761EF788A90006EBCD /* AppDelegate.swift in Sources */,
 				CC126D9F1EF7D7910006EBCD /* HomeViewController.swift in Sources */,
 				CC126D7E1EF788A90006EBCD /* KNCinema.xcdatamodeld in Sources */,
+				CC8E728A1F063116009B7502 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
