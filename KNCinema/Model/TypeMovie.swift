@@ -7,13 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class TypeMovie: NSObject {
+    let ref = FIRDatabase.database().reference()
     var typeID: String?
-    var movies :[Movie]?
+    var movies :[Movie] = []
     
-    init?(id: String, movies: [Movie]) {
-        self.typeID = id
-        self.movies = movies
-    }
+    
 }
