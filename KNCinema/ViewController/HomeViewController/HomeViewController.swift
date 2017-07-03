@@ -23,17 +23,32 @@ class HomeViewController: BaseViewController {
     }
 
     func loadData() {
+        //var arrTypeMovies: [TypeMovie] = []
         let ref = self.fireBaseRef.child("Movies").observeSingleEvent(of: .value, with: {(snapshot: FIRDataSnapshot) in
             if let listTypeMovies: [FIRDataSnapshot] = snapshot.children.allObjects as! [FIRDataSnapshot]{
                 print(listTypeMovies)
                 
-                for index in listTypeMovies{
-                    let refMovie = self.fireBaseRef.child("Movies").child(index.key).observeSingleEvent(of: .value, with: {(snap: FIRDataSnapshot) in
-                        if let listMovie: [FIRDataSnapshot] = snap.children.allObjects as? [FIRDataSnapshot]{
-                            print(listMovie)
+                //print(arrTypeMovies)
+                for typeMovie in listTypeMovies{
+                    //var arrMovieOfType: [TypeMovie]
+                    var _movies: [Movie] = []
+                    let typeMV = self.fireBaseRef.child("Movies").child(typeMovie.key).observeSingleEvent(of: .value, with: {(typeMo: FIRDataSnapshot) in
+                        if let type: [FIRDataSnapshot] = typeMo.children.allObjects as? [FIRDataSnapshot]{
+                            print(type)
+                            
+                            for movie in type{
+                                let mv = self.fireBaseRef.child("Movies").child(typeMovie.key).child(movie.key).observeSingleEvent(of: .value, with: {(mov: FIRDataSnapshot) in
+                                     let movie = Movie(id: mov.key, jsonData: mov.value as! [String : AnyObject])
+                                    _movies.append(movie!)
+                                })
+                            }
+                            //print(_movies.count)
+                            
                         }
                     })
+                    //print(typeMovie)
                 }
+                
             }
         })
         print(ref)

@@ -9,24 +9,11 @@
 import UIKit
 
 class ListMovies: NSObject {
-    var typeMovie: String?
-    var movies: [String: AnyObject]?
+    var idTypeMovie: String?
+    var typeMovies: [TypeMovie]?
     
-    init?(id: String, jsonData: [String: AnyObject]) {
-        self.typeMovie = id
-        
-//        if let conversationsData = JsonData["conversations"] as? [String:AnyObject] {
-//            for item in conversationsData {
-//                guard let conversation = Conversations(key: item.key, JsonData: item.value as! [String:AnyObject]) else {return}
-//                self.conversations.append(conversation)
-//            }
-//        }
-        
-//        if let movies = jsonData["Movies"] as? [String: AnyObject]{
-//            for movies in movies{
-//                
-//            }
-//        }
-        
+    init?(id: String, typeMovies: [TypeMovie]) {
+        self.idTypeMovie = id
+        self.typeMovies = typeMovies
     }
 }
